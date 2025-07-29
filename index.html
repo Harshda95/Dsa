@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccuraType</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <header class="app-header">
+    <div class="logo">
+  <img src="./../assests/ChatGPT Image Jun 13, 2025, 08_12_50 AM.png" alt="AccuraType Logo" class="logo-img" />
+   <span class="logo-text">AccuraType</span>
+  </div>
+
+   <nav class="header-options">
+    <select class="option-select" id="words">
+      <option value="25">25 Words</option>
+      <option value="50">50 Words</option>
+      <option value="75">75 Words</option>
+    </select>
+
+    <select class="option-select">
+      <option value="15">15 sec</option>
+      <option value="30">30 sec</option>
+      <option value="60">60 sec</option>
+    </select>
+
+    <select class="option-select">
+      <option value="word">Word Mode</option>
+      <option value="time">Time Mode</option>
+    </select>
+  </nav>
+<div id="btn">
+  <button class="sign-in">Sign In</button>
+  <button id="theme-toggle">🌞</button>
+</div>
+
+   </header> 
+
+   <main class="typing-area">
+  <div id="quoteDisplay"></div>
+<input type="text" id="quoteInput" autocomplete="off" name="typingInput" />
+
+  <div class="stats">
+    <span>⏱ Time: <span id="timer">0</span>s</span>
+    <span>📈 WPM: <span id="wpm">0</span></span>
+    <span>🎯 Accuracy: <span id="accuracy">0</span>%</span>
+  </div>
+
+  <button id="restart-btn">🔄 Restart</button>
+</main>
+<script src="./script.js"></script>
+</body>
+</html>
